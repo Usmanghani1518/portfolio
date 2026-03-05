@@ -120,25 +120,6 @@ export default function BlogSection() {
             </div>
           </div>
 
-          {/* Prev Button */}
-          <button
-            onClick={scrollPrev}
-            disabled={!canScrollPrev}
-            className="absolute top-1/2 -translate-y-1/2 -left-5 w-10 h-10 rounded-full bg-card-dark border border-border-subtle flex items-center justify-center hover:border-primary-cyan hover:text-primary-cyan transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed text-text-primary z-10"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-
-          {/* Next Button */}
-          <button
-            onClick={scrollNext}
-            disabled={!canScrollNext}
-            className="absolute top-1/2 -translate-y-1/2 -right-5 w-10 h-10 rounded-full bg-card-dark border border-border-subtle flex items-center justify-center hover:border-primary-cyan hover:text-primary-cyan transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed text-text-primary z-10"
-            aria-label="Next slide"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
         </div>
 
         {/* Dot Indicators */}

@@ -9,7 +9,7 @@ export const blogPosts: BlogPost[] = [
     slug: "langchain-production",
     readTime: "6 min read",
     date: "June 2025",
-    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop&q=80",
+    coverImage: "/images/blogs/aitollcallingfinal.png",
     intro:
       "After shipping 4\u20135 LangChain-based AI systems to production for international clients, I\u2019ve developed a repeatable process that avoids the common pitfalls. Here\u2019s exactly how I structure a LangChain project from day one through deployment.",
     sections: [
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
     slug: "rag-architecture",
     readTime: "8 min read",
     date: "May 2025",
-    coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop&q=80",
+    coverImage: "/images/blogs/rag-arch.webp",
     intro:
       "RAG sounds simple \u2014 chunk documents, embed them, retrieve, generate. In practice, naive RAG fails in production in predictable ways. Here\u2019s what I\u2019ve learned building RAG systems for medical, legal, and compliance use cases.",
     sections: [
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
     slug: "langgraph-multi-agent",
     readTime: "9 min read",
     date: "June 2025",
-    coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&q=80",
+    coverImage: "/images/blogs/langgraph.png",
     intro:
       "LangGraph is the most powerful tool I\u2019ve added to my AI stack \u2014 and also the most misunderstood. After using it on ESG scoring agents and travel booking systems, here\u2019s how I actually structure multi-agent workflows that stay predictable in production.",
     sections: [
@@ -160,7 +160,7 @@ export const blogPosts: BlogPost[] = [
     slug: "pgvector-vs-pinecone",
     readTime: "7 min read",
     date: "May 2025",
-    coverImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&h=630&fit=crop&q=80",
+    coverImage: "/images/blogs/pgvector-vs-pinecone.webp",
     intro:
       "I\u2019ve shipped production systems using both pgvector and Pinecone \u2014 sometimes in the same project. The internet is full of benchmark comparisons, but what actually matters is matching the right tool to the right use case. Here\u2019s my real-world decision framework.",
     sections: [
@@ -316,7 +316,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-agent-tool-calling",
     readTime: "8 min read",
     date: "February 2025",
-    coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80",
+    coverImage: "/images/blogs/aitollcallingfinal.png",
     intro:
       "Tool calling (function calling) is what transforms an LLM from a text generator into an AI agent that takes real actions. After building travel booking agents, ESG scoring agents, and medical retrieval systems, here\u2019s my complete framework for designing tool-calling agents that work reliably.",
     sections: [

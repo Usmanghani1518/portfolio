@@ -12,7 +12,7 @@ const footerLinks = [
 
 const socialLinks = [
   { icon: FaGithub, href: "https://github.com/Usmanghani1518", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com/in/usmanghani", label: "LinkedIn" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/usman-ghani-b56431271/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:usmanghani.developer@gmail.com", label: "Email" },
 ];
 
@@ -28,7 +28,7 @@ export default function Footer() {
               <span className="text-primary-cyan">.</span>
             </span>
             <p className="font-mono text-[12px] text-[#64748B] mt-2">
-              &copy; 2025 Usman Ghani. All rights reserved.
+              &copy; {new Date().getFullYear()} Usman Ghani. All rights reserved.
             </p>
           </div>
 

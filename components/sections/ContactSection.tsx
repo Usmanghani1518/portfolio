@@ -19,7 +19,7 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 
 const socialLinks = [
   { icon: FaGithub, href: "https://github.com/Usmanghani1518", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com/in/usmanghani", label: "LinkedIn" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/usman-ghani-b56431271/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:usmanghani.developer@gmail.com", label: "Email" },
 ];
 
