@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
+import AuthorCard from "@/components/ui/AuthorCard";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -98,20 +99,7 @@ export default async function BlogDetailPage({
         ))}
 
         {/* Author card */}
-        <div className="bg-card-dark border border-border-subtle rounded-xl p-8 mt-16 flex items-center gap-6">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shrink-0" />
-          <div>
-            <span className="font-heading font-bold text-text-primary block">
-              Usman Ghani
-            </span>
-            <span className="text-primary-cyan text-sm block">
-              Full-Stack Developer & AI Engineer
-            </span>
-            <span className="text-[#94a3b8] text-sm mt-1 block">
-              Building AI-powered products end-to-end for international clients.
-            </span>
-          </div>
-        </div>
+        <AuthorCard />
 
         {/* Bottom nav */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-border-subtle">
