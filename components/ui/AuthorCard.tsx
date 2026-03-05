@@ -1,33 +1,19 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import { Github, Mail } from "lucide-react";
 
 export default function AuthorCard() {
-  const [imgError, setImgError] = useState(false);
-
   return (
     <div className="bg-card-dark border border-border-subtle rounded-xl p-8 mt-16">
       <div className="flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-6">
-        {/* Profile Image or Fallback */}
-        {imgError ? (
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shrink-0 ring-2 ring-primary-cyan ring-offset-2 ring-offset-card-dark">
-            <span className="text-text-primary font-heading font-bold text-lg">
-              UG
-            </span>
-          </div>
-        ) : (
-          <div className="relative w-16 h-16 shrink-0">
-            <Image
-              src="/images/profile.jpg"
-              alt="Usman Ghani"
-              fill
-              className="rounded-full object-cover ring-2 ring-primary-cyan ring-offset-2 ring-offset-card-dark"
-              onError={() => setImgError(true)}
-            />
-          </div>
-        )}
+        {/* Profile Image */}
+        <div className="relative w-16 h-16 shrink-0">
+          <Image
+            src="/images/profile.png"
+            alt="Usman Ghani"
+            fill
+            className="rounded-full object-cover ring-2 ring-primary-cyan ring-offset-2 ring-offset-card-dark"
+          />
+        </div>
 
         {/* Author Info */}
         <div>
@@ -63,12 +49,6 @@ export default function AuthorCard() {
         </div>
       </div>
 
-      {/* Dev note - hidden in production */}
-      {process.env.NODE_ENV === "development" && (
-        <p className="text-text-muted text-xs mt-4 text-center opacity-60">
-          {"Add your profile photo at /public/images/profile.jpg to replace the initials avatar."}
-        </p>
-      )}
     </div>
   );
 }
