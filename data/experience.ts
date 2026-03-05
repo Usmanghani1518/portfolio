@@ -3,7 +3,7 @@ import type { ExperienceEntry } from "@/types";
 export const experience: ExperienceEntry[] = [
   {
     id: "techyst",
-    role: "Senior AI Engineer",
+    role: "AI Engineer",
     company: "Techyst",
     period: "2025 \u2014 Present",
     location: "Remote",
