@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -46,10 +47,10 @@ export default function AboutSection() {
             {/* Image container */}
             <div className="aspect-square bg-[#e2e8f0] rounded-xl overflow-hidden border border-primary-cyan/20 shadow-xl relative">
               <Image
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt="Software Engineer Portrait"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />

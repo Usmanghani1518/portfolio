@@ -75,15 +75,30 @@ export default async function ProjectDetailPage({
         </div>
       </div>
 
-      {/* Gradient placeholder image block */}
-      <div className={`w-full h-[400px] bg-gradient-to-br ${project.placeholder} flex flex-col items-center justify-center`}>
-        <span className="font-mono text-lg text-white/20">
-          {project.title}
-        </span>
-        <span className="text-white/10 text-xs font-mono mt-2">
-          Upload your own project screenshot here
-        </span>
-      </div>
+      {/* Image gallery or gradient fallback */}
+      {project.images && project.images.length > 0 ? (
+        <div className="w-full flex overflow-x-auto gap-4 py-8">
+          {project.images.map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              alt={`${project.title} screenshot ${idx + 1}`}
+              className="h-[400px] object-cover flex-shrink-0 rounded-lg"
+            />
+          ))}
+        </div>
+      ) : (
+        <div
+          className={`w-full h-[400px] bg-gradient-to-br ${project.placeholder} flex flex-col items-center justify-center`}
+        >
+          <span className="font-mono text-lg text-white/20">
+            {project.title}
+          </span>
+          <span className="text-white/10 text-xs font-mono mt-2">
+            Upload your own project screenshot here
+          </span>
+        </div>
+      )}
 
       {/* Content sections */}
       <div className="max-w-4xl mx-auto px-6 py-16">

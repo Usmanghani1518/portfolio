@@ -75,13 +75,41 @@ export default function ProjectsSection() {
           >
             <Link href={`/projects/${filteredFeatured.id}`}>
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                {/* Gradient Placeholder */}
-                <div className="browser-mockup">
-                  <div className={`aspect-video bg-gradient-to-br ${filteredFeatured.placeholder} flex items-center justify-center`}>
-                    <span className="font-mono text-lg text-white/30">
-                      {filteredFeatured.title}
-                    </span>
-                  </div>
+                {/* Gradient Placeholder or image */}
+                <div className="browser-mockup relative">
+                  {filteredFeatured.images && filteredFeatured.images.length > 0 ? (
+                    <>
+                      <img
+                        src={filteredFeatured.images[0]}
+                        alt={filteredFeatured.title}
+                        className="aspect-video object-cover w-full h-full"
+                      />
+                      {/* overlay to show title + tags */}
+                      <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent p-6">
+                        <span className="font-heading text-2xl font-bold text-white">
+                          {filteredFeatured.title}
+                        </span>
+                        <div className="flex flex-wrap gap-1 mt-2">
+                          {filteredFeatured.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="text-[11px] font-mono font-bold uppercase text-white bg-[#00000040] px-[6px] py-[2px] rounded"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <div
+                      className={`aspect-video bg-gradient-to-br ${filteredFeatured.placeholder} flex items-center justify-center`}
+                    >
+                      <span className="font-mono text-lg text-white/30">
+                        {filteredFeatured.title}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
@@ -149,12 +177,29 @@ export default function ProjectsSection() {
               className="rounded-xl overflow-hidden bg-[#1e293b] border border-border-subtle hover:-translate-y-[4px] transition-all duration-300 hover:border-primary-cyan hover:shadow-[0_8px_32px_rgba(6,182,212,0.12)] group"
             >
               <Link href={`/projects/${project.id}`}>
-                {/* Gradient Placeholder */}
-                <div className={`aspect-video bg-gradient-to-br ${project.placeholder} flex items-center justify-center`}>
-                  <span className="font-mono text-lg text-white/30">
-                    {project.title}
-                  </span>
-                </div>
+                {/* Gradient Placeholder or image */}
+                {project.images && project.images.length > 0 ? (
+                  <div className="relative">
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="aspect-video object-cover w-full h-full"
+                    />
+                    <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-4">
+                      <span className="font-heading text-lg font-bold text-white">
+                        {project.title}
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <div
+                    className={`aspect-video bg-gradient-to-br ${project.placeholder} flex items-center justify-center`}
+                  >
+                    <span className="font-mono text-lg text-white/30">
+                      {project.title}
+                    </span>
+                  </div>
+                )}
 
                 {/* Content */}
                 <div className="p-8">

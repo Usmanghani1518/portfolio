@@ -15,10 +15,10 @@ export const projects: Project[] = [
     client: "Sydney, Australia",
     placeholder: "from-cyan-500 to-blue-700",
     images: [
-      "/images/projects/esgai.png",
-      "/images/projects/esgai1.png",
-      "/images/projects/esgai2.png",
-      "/images/projects/esgai3.png",
+      "/images/projects/esg/esgai.png",
+      "/images/projects/esg/esgai1.png",
+      "/images/projects/esg/esgai2.png",
+      "/images/projects/esg/esgai3.png",
     ],
     overview:
       "Delivered a complete AI-powered ESG compliance platform for a client based in Sydney, Australia. The system automates ESG scoring across three categories \u2014 Environmental, Social, and Governance \u2014 eliminating manual evaluation entirely. Built end-to-end: backend AI agent, intelligent web scraping pipeline, and a clean production-ready frontend dashboard.",
@@ -51,6 +51,10 @@ export const projects: Project[] = [
     category: "fullstack",
     client: "Texas, USA",
     placeholder: "from-violet-500 to-purple-800",
+    images: [
+      "/images/projects/travel/travel.png",
+      "/images/projects/travel/travel1.png",
+    ],
     overview:
       "Built a complete AI travel assistant platform for a client in Texas. The system handles real-time flight searches, hotel bookings, and customer queries autonomously \u2014 end-to-end, from backend orchestration to the user-facing interface.",
     problem:
@@ -71,34 +75,37 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "metabolic-md",
-    title: "Metabolic MD",
+    id: "buycex",
+    title: "BuyCEX",
     description:
-      "A RAG-based medical document retrieval system reducing search time by 70% with source-level attribution across PDFs, websites, and video.",
-    tags: ["FastAPI", "LangChain", "Pinecone", "RAG"],
+      "A crypto trading platform frontend built with React, Tailwind CSS, and Framer Motion, integrated with live APIs and state management via Redux Toolkit.",
+    tags: ["React.js", "Tailwind CSS", "Framer Motion", "Redux Toolkit", "API Integration"],
     liveUrl: "#",
     repoUrl: "https://github.com/Usmanghani1518",
     featured: false,
-    category: "backend",
-    client: "Colorado, USA",
-    placeholder: "from-emerald-500 to-teal-700",
+    category: "frontend",
+    client: "Remote",
+    placeholder: "from-violet-500 to-purple-800",
+    images: [
+      "/images/projects/buycex/buycex.png",
+      "/images/projects/buycex/buycex1.png",
+      "/images/projects/buycex/buycex2.png",
+    ],
     overview:
-      "Developed a full-stack RAG-based medical document retrieval system for a healthcare client in Colorado. The system allows medical professionals to search across large document libraries \u2014 PDFs, websites, and video transcripts \u2014 with accurate, source-attributed answers in seconds.",
+      "Frontend development for BuyCEX, a cryptocurrency trading dashboard. Implemented responsive UI components, animated transitions, and integrated multiple API endpoints for price feeds and user actions.",
     problem:
-      "Medical staff spent excessive time manually searching through PDFs, clinical documents, and online resources to answer patient and staff queries. Search was slow, inaccurate, and provided no source traceability.",
+      "The client needed a modern, performant frontend interface for their crypto platform that could handle real-time data updates and complex user interactions.",
     solution:
-      "Implemented a Retrieval-Augmented Generation (RAG) pipeline using LangChain, Pinecone for vector storage, and FastAPI for the backend. Documents are chunked, embedded, and indexed. Queries retrieve the most relevant chunks and a LLM generates precise, source-attributed answers.",
+      "Built the interface using React.js with Tailwind CSS for rapid styling and Framer Motion for smooth animations. State management and API communication were handled through Redux Toolkit slices and async thunks.",
     results: [
-      "70% reduction in document search time",
-      "Full source-level attribution for every answer",
-      "Supports PDFs, websites, and video as knowledge sources",
-      "Clean production-ready interface delivered",
+      "Fully responsive, polished user interface",
+      "Real-time price updates and order handling",
+      "Smooth animated interactions across the app",
+      "Scalable Redux architecture for future features",
     ],
     techStack: {
-      Backend: ["FastAPI", "LangChain", "Python"],
-      "AI/Data": ["Pinecone", "RAG Architecture", "OpenAI Embeddings"],
-      Sources: ["PDFs", "Websites", "Video Transcripts"],
-      DevOps: ["AWS", "Docker"],
+      Frontend: ["React.js", "Tailwind CSS", "Framer Motion", "Redux Toolkit"],
+      APIs: ["Crypto price feeds", "Trading endpoints"],
     },
   },
 ];
