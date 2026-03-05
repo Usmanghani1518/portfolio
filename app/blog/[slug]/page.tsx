@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 import AuthorCard from "@/components/ui/AuthorCard";
 import type { Metadata } from "next";
@@ -71,8 +72,17 @@ export default async function BlogDetailPage({
         </div>
       </div>
 
-      {/* Gradient thumbnail */}
-      <div className={`w-full h-[320px] bg-gradient-to-br ${post.gradient}`} />
+      {/* Cover image */}
+      <div className="relative w-full h-[320px] md:h-[420px] overflow-hidden">
+        <Image
+          src={post.coverImage}
+          alt={post.title}
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className={`absolute inset-0 bg-gradient-to-br ${post.gradient} opacity-25`} />
+      </div>
 
       {/* Article content */}
       <div className="max-w-3xl mx-auto px-6 py-16">

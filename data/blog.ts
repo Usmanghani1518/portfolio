@@ -9,6 +9,7 @@ export const blogPosts: BlogPost[] = [
     slug: "langchain-production",
     readTime: "6 min read",
     date: "June 2025",
+    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop&q=80",
     intro:
       "After shipping 4\u20135 LangChain-based AI systems to production for international clients, I\u2019ve developed a repeatable process that avoids the common pitfalls. Here\u2019s exactly how I structure a LangChain project from day one through deployment.",
     sections: [
@@ -47,6 +48,7 @@ export const blogPosts: BlogPost[] = [
     slug: "rag-architecture",
     readTime: "8 min read",
     date: "May 2025",
+    coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop&q=80",
     intro:
       "RAG sounds simple \u2014 chunk documents, embed them, retrieve, generate. In practice, naive RAG fails in production in predictable ways. Here\u2019s what I\u2019ve learned building RAG systems for medical, legal, and compliance use cases.",
     sections: [
@@ -80,6 +82,7 @@ export const blogPosts: BlogPost[] = [
     slug: "fullstack-ai-stack",
     readTime: "5 min read",
     date: "April 2025",
+    coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop&q=80",
     intro:
       "After 3 years building full-stack applications and the last 2 years shipping AI products end-to-end, this is the exact stack I reach for in 2025 when a client needs a production AI system built fast and built right.",
     sections: [
@@ -118,6 +121,7 @@ export const blogPosts: BlogPost[] = [
     slug: "langgraph-multi-agent",
     readTime: "9 min read",
     date: "June 2025",
+    coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&q=80",
     intro:
       "LangGraph is the most powerful tool I\u2019ve added to my AI stack \u2014 and also the most misunderstood. After using it on ESG scoring agents and travel booking systems, here\u2019s how I actually structure multi-agent workflows that stay predictable in production.",
     sections: [
@@ -156,6 +160,7 @@ export const blogPosts: BlogPost[] = [
     slug: "pgvector-vs-pinecone",
     readTime: "7 min read",
     date: "May 2025",
+    coverImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=1200&h=630&fit=crop&q=80",
     intro:
       "I\u2019ve shipped production systems using both pgvector and Pinecone \u2014 sometimes in the same project. The internet is full of benchmark comparisons, but what actually matters is matching the right tool to the right use case. Here\u2019s my real-world decision framework.",
     sections: [
@@ -194,6 +199,7 @@ export const blogPosts: BlogPost[] = [
     slug: "fastapi-ai-backend",
     readTime: "6 min read",
     date: "April 2025",
+    coverImage: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=1200&h=630&fit=crop&q=80",
     intro:
       "I\u2019ve built backends in Node.js, Express.js, and FastAPI. For AI-adjacent work \u2014 anything involving LLMs, vector databases, embeddings, or data pipelines \u2014 FastAPI wins every time. Here\u2019s exactly why, and how I structure FastAPI projects for production AI systems.",
     sections: [
@@ -232,6 +238,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-products-for-clients",
     readTime: "7 min read",
     date: "March 2025",
+    coverImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop&q=80",
     intro:
       "In the last two years I\u2019ve delivered AI products end-to-end for clients in the US, Australia, and beyond \u2014 from a compliance platform in Sydney to a medical RAG system in Colorado. These are the lessons that don\u2019t show up in documentation.",
     sections: [
@@ -270,6 +277,7 @@ export const blogPosts: BlogPost[] = [
     slug: "nextjs-fastapi-architecture",
     readTime: "8 min read",
     date: "March 2025",
+    coverImage: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=1200&h=630&fit=crop&q=80",
     intro:
       "This is the architecture I reach for when a client needs a complete AI-powered web application. Next.js 15 handles the frontend and server-side rendering. FastAPI handles the AI backend and LLM orchestration. Here\u2019s how I wire them together cleanly.",
     sections: [
@@ -308,6 +316,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-agent-tool-calling",
     readTime: "8 min read",
     date: "February 2025",
+    coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80",
     intro:
       "Tool calling (function calling) is what transforms an LLM from a text generator into an AI agent that takes real actions. After building travel booking agents, ESG scoring agents, and medical retrieval systems, here\u2019s my complete framework for designing tool-calling agents that work reliably.",
     sections: [

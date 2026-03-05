@@ -44,5 +44,6 @@ export interface BlogPost {
   readTime: string;
   date: string;
   intro: string;
+  coverImage: string;
   sections: Array<{ title: string; content: string }>;
 }

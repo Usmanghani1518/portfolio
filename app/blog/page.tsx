@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { blogPosts } from "@/data/blog";
 
@@ -77,10 +78,16 @@ export default function BlogIndexPage() {
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-primary-cyan scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
 
               <Link href={`/blog/${post.slug}`}>
-                {/* Gradient thumbnail */}
-                <div
-                  className={`h-40 bg-gradient-to-br ${post.gradient}`}
-                />
+                {/* Cover image */}
+                <div className="relative h-40 overflow-hidden">
+                  <Image
+                    src={post.coverImage}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${post.gradient} opacity-30`} />
+                </div>
 
                 {/* Content */}
                 <div className="p-8">
